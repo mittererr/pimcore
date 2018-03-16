@@ -8,7 +8,7 @@
     <link rel="icon" type="image/png" href="/pimcore/static6/img/favicon/favicon-32x32.png"/>
 
     {% spaceless -%}
-        {# add global stylesheets and scripts outside of any blocsk to add them to the helpers before any others assets are added #}
+        {# add global stylesheets and scripts outside of any blocks to add them to the helpers before any others assets are added #}
         {# we use the view helper to have cache buster functionality #}
         {% do pimcore_head_link().appendStylesheet(asset('static/bootstrap/css/bootstrap.css')) %}
         {% do pimcore_head_link().appendStylesheet(asset('static/css/global.css')) %}
